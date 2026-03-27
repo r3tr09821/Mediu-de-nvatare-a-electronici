@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proiecte | RoboStart Lab</title>
+  <meta name="description" content="Proiecte de roboti simpli pentru incepatori, prezentate clar si insotite de loc rezervat pentru imagini.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body data-page="proiecte">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>
+          <strong>RoboStart</strong>
+          <small>Lab pentru incepatori</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Acasa</a>
+        <a href="lectii.html">Lectii</a>
+        <a href="proiecte.html" class="active">Proiecte</a>
+        <a href="resurse.html">Resurse</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Proiecte ghidate</p>
+        <h1>Trei proiecte simple pe care le poti transforma in roboti reali</h1>
+        <p class="lead">
+          Fiecare proiect are o descriere scurta, un loc rezervat pentru imagine si un buton
+          care te duce mai aproape de partea practica.
+        </p>
+      </section>
+
+      <section class="project-showcase" id="robot-lumina">
+        <div class="project-copy">
+          <p class="eyebrow">Proiect 1</p>
+          <h2>Robot care urmareste lumina</h2>
+          <p>Un proiect excelent pentru cine vrea sa inteleaga cum un robot reactioneaza la mediul din jur folosind un senzor de lumina.</p>
+          <ul class="bullet-list">
+            <li>Componente: LDR, LED, rezistor, placa de control.</li>
+            <li>Ce inveti: citire analogica si reactie la lumina.</li>
+            <li>Nivel: incepator.</li>
+          </ul>
+          <a class="button button-primary" href="lectie-senzori.html">Vezi baza teoretica</a>
+        </div>
+        <div class="project-visual">
+          <div class="image-placeholder">
+            <strong>Aici va fi imaginea proiectului 1</strong>
+            <p>Robot care urmareste lumina</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-showcase reverse" id="robot-roti">
+        <div class="project-copy">
+          <p class="eyebrow">Proiect 2</p>
+          <h2>Mini-robot cu doua roti</h2>
+          <p>Un model simplu de robot mobil pentru incepatori, bun pentru a intelege alimentarea si miscarea de baza.</p>
+          <ul class="bullet-list">
+            <li>Componente: doua motoare, roti, baterie, sasiu.</li>
+            <li>Ce inveti: miscarea de baza si testarea modulara.</li>
+            <li>Nivel: incepator spre mediu.</li>
+          </ul>
+          <a class="button button-primary" href="lectie-motoare.html">Vezi lectia pentru motoare</a>
+        </div>
+        <div class="project-visual">
+          <div class="image-placeholder">
+            <strong>Aici va fi imaginea proiectului 2</strong>
+            <p>Mini-robot cu doua roti</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="project-showcase" id="robot-obstacole">
+        <div class="project-copy">
+          <p class="eyebrow">Proiect 3</p>
+          <h2>Robot care evita obstacole</h2>
+          <p>Proiectul ideal pentru a combina senzori, motoare si logica simpla intr-un robot care ia decizii de baza singur.</p>
+          <ul class="bullet-list">
+            <li>Componente: senzor ultrasonic, driver motoare, doua motoare, sasiu.</li>
+            <li>Ce inveti: detectie, reactie si schimbare de directie.</li>
+            <li>Nivel: mediu.</li>
+          </ul>
+          <a class="button button-primary" href="lectie-senzori.html#aplicatii">Vezi partea despre senzori</a>
+        </div>
+        <div class="project-visual">
+          <div class="image-placeholder">
+            <strong>Aici va fi imaginea proiectului 3</strong>
+            <p>Robot care evita obstacole</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-strip">
+        <div>
+          <p class="eyebrow">Legatura cu lectiile</p>
+          <h2>Mai intai intelegi teoria, apoi revii aici si construiesti proiectul</h2>
+        </div>
+        <a class="button button-secondary" href="lectii.html">Inapoi la lectii</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>RoboStart Lab (c) <span data-year></span> - proiecte simple pentru incepatori</p>
+    </footer>
+  </div>
+</body>
+</html>

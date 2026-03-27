@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lectie: LED-uri si rezistoare | RoboStart Lab</title>
+  <meta name="description" content="Lectie despre LED-uri si rezistoare pentru incepatori.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body data-page="lectii">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>
+          <strong>RoboStart</strong>
+          <small>Lab pentru incepatori</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Acasa</a>
+        <a href="lectii.html" class="active">Lectii</a>
+        <a href="proiecte.html">Proiecte</a>
+        <a href="resurse.html">Resurse</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Lectia 2</p>
+        <h1>LED-uri si rezistoare</h1>
+        <p class="lead">Afli de ce LED-ul trebuie protejat si cum alegi o conexiune sigura pentru primele experimente.</p>
+      </section>
+
+      <section class="lesson-page-layout">
+        <aside class="lesson-sidebar">
+          <p class="eyebrow">Obiective</p>
+          <h2>Ce intelegi dupa lectie</h2>
+          <ul class="mission-list">
+            <li>Ce rol are un LED intr-un circuit simplu.</li>
+            <li>De ce rezistorul limiteaza curentul.</li>
+            <li>Cum conectezi corect polaritatea LED-ului.</li>
+          </ul>
+          <div class="note-box">
+            <strong>Retine:</strong>
+            <p>LED-ul fara rezistor poate primi prea mult curent si se poate deteriora.</p>
+          </div>
+        </aside>
+
+        <article class="lesson-detail">
+          <p class="eyebrow">Explicatie</p>
+          <h2>Ce se intampla intr-un montaj simplu cu LED</h2>
+          <p>LED-ul este o dioda care emite lumina, dar are nevoie de un curent controlat. Rezistorul este piesa care il ajuta sa ramana in limite sigure.</p>
+          <div class="step-list">
+            <article>
+              <h3>Piciorul lung si piciorul scurt</h3>
+              <p>Piciorul lung este anodul, iar cel scurt este catodul. Sensul conteaza.</p>
+            </article>
+            <article>
+              <h3>Rezistorul in serie</h3>
+              <p>Rezistorul se pune pe acelasi traseu cu LED-ul pentru a limita curentul.</p>
+            </article>
+            <article>
+              <h3>Testare</h3>
+              <p>Verifici mai intai conexiunile, apoi alimentezi circuitul si observi rezultatul.</p>
+            </article>
+          </div>
+          <div class="next-nav">
+            <a class="button button-secondary" href="lectie-circuitul.html">Lectia anterioara</a>
+            <a class="button button-primary" href="lectie-senzori.html">Mergi la senzori</a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>RoboStart Lab (c) <span data-year></span> - lectii pentru incepatori</p>
+    </footer>
+  </div>
+</body>
+</html>

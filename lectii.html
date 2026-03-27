@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lectii | RoboStart Lab</title>
+  <meta name="description" content="Categorii de lectii pentru electronica si robotica, cu acces catre pagini dedicate pentru fiecare lectie.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body data-page="lectii">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>
+          <strong>RoboStart</strong>
+          <small>Lab pentru incepatori</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Acasa</a>
+        <a href="lectii.html" class="active">Lectii</a>
+        <a href="proiecte.html">Proiecte</a>
+        <a href="resurse.html">Resurse</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Catalog de lectii</p>
+        <h1>Alege o categorie si intra in lectia care te intereseaza</h1>
+        <p class="lead">
+          Fiecare categorie contine mai multe lectii. Deschizi categoria, alegi lectia dorita
+          si ajungi pe o pagina dedicata in care gasesti explicatia pas cu pas.
+        </p>
+      </section>
+
+      <section class="lesson-categories">
+        <details class="category-group" open>
+          <summary>Fundamente de baza</summary>
+          <div class="category-group__body">
+            <p>Categoria potrivita pentru cine incepe cu notiunile esentiale din electronica.</p>
+            <div class="lesson-link-grid">
+              <a class="lesson-link-card" href="lectie-circuitul.html">
+                <h3>Ce este un circuit?</h3>
+                <p>Intelegi curentul, traseul complet si de ce un circuit trebuie inchis.</p>
+                <div class="lesson-meta">
+                  <span class="pill">Nivel 1</span>
+                  <span class="pill">10 min</span>
+                </div>
+              </a>
+              <a class="lesson-link-card" href="lectie-led-rezistor.html">
+                <h3>LED-uri si rezistoare</h3>
+                <p>Afli cum protejezi un LED si cum alegi o conexiune simpla si sigura.</p>
+                <div class="lesson-meta">
+                  <span class="pill">Nivel 1</span>
+                  <span class="pill">12 min</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </details>
+
+        <details class="category-group">
+          <summary>Senzori si intrari</summary>
+          <div class="category-group__body">
+            <p>Aici inveti cum citeste un robot lumea din jurul lui si cum raspunde la semnale simple.</p>
+            <div class="lesson-link-grid">
+              <a class="lesson-link-card" href="lectie-senzori.html">
+                <h3>Senzori de baza</h3>
+                <p>Vezi diferenta dintre un senzor de lumina, unul ultrasonic si un buton.</p>
+                <div class="lesson-meta">
+                  <span class="pill">Nivel 2</span>
+                  <span class="pill">15 min</span>
+                </div>
+              </a>
+              <a class="lesson-link-card" href="lectie-senzori.html#aplicatii">
+                <h3>Aplicatii simple cu senzori</h3>
+                <p>Descoperi cum aprinzi un LED sau opresti un robot cand detectezi ceva.</p>
+                <div class="lesson-meta">
+                  <span class="pill">Nivel 2</span>
+                  <span class="pill">14 min</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </details>
+
+        <details class="category-group">
+          <summary>Motoare si miscare</summary>
+          <div class="category-group__body">
+            <p>Categoria unde inveti cum se misca robotii si ce piese trebuie pentru control corect.</p>
+            <div class="lesson-link-grid">
+              <a class="lesson-link-card" href="lectie-motoare.html">
+                <h3>Motoare, roti si alimentare</h3>
+                <p>Afli cum este pus in miscare un robot simplu pe doua roti.</p>
+                <div class="lesson-meta">
+                  <span class="pill">Nivel 2</span>
+                  <span class="pill">18 min</span>
+                </div>
+              </a>
+              <a class="lesson-link-card" href="lectie-motoare.html#control">
+                <h3>Controlul miscarii</h3>
+                <p>Intelegi de ce ai nevoie de alimentare separata si de control pe etape.</p>
+                <div class="lesson-meta">
+                  <span class="pill">Nivel 2</span>
+                  <span class="pill">16 min</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </details>
+
+        <details class="category-group" open>
+          <summary>Lectii pentru curent continuu</summary>
+          <div class="category-group__body">
+            <p>Set complet de lectii pentru componentele si circuitele de curent continuu.</p>
+            <div class="lesson-link-grid">
+              <a class="lesson-link-card" href="lectie-cc-rezistente.html">
+                <h3>Rezistente in curent continuu</h3>
+                <p>Rolul rezistentei, limitarea curentului si efectul asupra tensiunii.</p>
+              </a>
+              <a class="lesson-link-card" href="lectie-cc-condensatoare.html">
+                <h3>Condensatoare in curent continuu</h3>
+                <p>Incarcare, descarcare si filtrarea semnalelor in regim continuu.</p>
+              </a>
+              <a class="lesson-link-card" href="lectie-cc-bobine.html">
+                <h3>Bobine in curent continuu</h3>
+                <p>Comportamentul bobinelor la alimentare si schimbari de curent.</p>
+              </a>
+              <a class="lesson-link-card" href="lectie-cc-acumulatori.html">
+                <h3>Acumulatori de curent continuu</h3>
+                <p>Surse reincarcabile, tensiune, capacitate si folosire corecta.</p>
+              </a>
+              <a class="lesson-link-card" href="lectie-cc-diode.html">
+                <h3>Diode in curent continuu</h3>
+                <p>Sensul de conducere si protectia circuitelor simple.</p>
+              </a>
+              <a class="lesson-link-card" href="lectie-cc-tranzistoare.html">
+                <h3>Tranzistoare in curent continuu</h3>
+                <p>Comutatie de baza si controlul sarcinilor intr-un circuit simplu.</p>
+              </a>
+              <a class="lesson-link-card" href="lectie-cc-componente.html">
+                <h3>Toate componentele unui circuit CC</h3>
+                <p>Privire de ansamblu asupra pieselor de baza dintr-un circuit de curent continuu.</p>
+              </a>
+            </div>
+          </div>
+        </details>
+
+        <details class="category-group">
+          <summary>Lectii pentru curent alternativ</summary>
+          <div class="category-group__body">
+            <p>Lectii dedicate componentelor si conceptelor folosite in circuitele de curent alternativ.</p>
+            <p>Pentru alimentare in AC am folosit tema <strong>surse si transformatoare</strong>, fiind echivalentul tehnic potrivit in locul unui acumulator dedicat AC.</p>
+            <div class="lesson-link-grid">
+              <a class="lesson-link-card" href="lectie-ca-rezistente.html">
+                <h3>Rezistente in curent alternativ</h3>
+                <p>Rezistenta pura in AC si relatia dintre tensiune, curent si putere.</p>
+              </a>
+              <a class="lesson-link-card" href="lectie-ca-condensatoare.html">
+                <h3>Condensatoare in curent alternativ</h3>
+                <p>Reactanta capacitiva si rolul condensatoarelor in AC.</p>
+              </a>
+              <a class="lesson-link-card" href="lectie-ca-bobine.html">
+                <h3>Bobine in curent alternativ</h3>
+                <p>Reactanta inductiva si comportamentul bobinelor la frecventa.</p>
+              </a>
+              <a class="lesson-link-card" href="lectie-ca-surse.html">
+                <h3>Surse si transformatoare in AC</h3>
+                <p>Elementul echivalent pentru alimentare in circuitele de curent alternativ.</p>
+              </a>
+              <a class="lesson-link-card" href="lectie-ca-diode.html">
+                <h3>Diode in curent alternativ</h3>
+                <p>Redresare si trecerea de la AC la DC in aplicatii simple.</p>
+              </a>
+              <a class="lesson-link-card" href="lectie-ca-tranzistoare.html">
+                <h3>Tranzistoare in curent alternativ</h3>
+                <p>Notiuni introductive despre amplificare si control de semnal.</p>
+              </a>
+              <a class="lesson-link-card" href="lectie-ca-componente.html">
+                <h3>Toate componentele unui circuit AC</h3>
+                <p>Imagine de ansamblu pentru piesele si rolurile lor in curent alternativ.</p>
+              </a>
+            </div>
+          </div>
+        </details>
+      </section>
+
+      <section class="section-grid">
+        <article class="panel panel-dark">
+          <p class="eyebrow">Cum folosesti pagina</p>
+          <h2>Traseu simplu pentru invatare</h2>
+          <ul class="mission-list">
+            <li>Deschizi categoria care te intereseaza.</li>
+            <li>Alegi lectia potrivita nivelului tau.</li>
+            <li>Parcurgi explicatia pe pagina dedicata.</li>
+            <li>Treci apoi la proiecte ca sa aplici ce ai invatat.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">Recomandare</p>
+          <h2>Ordinea buna pentru incepatori</h2>
+          <div class="mini-diagram">
+            <span>Circuite</span>
+            <span>LED-uri</span>
+            <span>Senzori</span>
+            <span>Motoare</span>
+          </div>
+          <p>
+            Daca esti la inceput, porneste din categoria Fundamente de baza, apoi treci la senzori
+            si abia dupa aceea la miscarea robotilor.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>RoboStart Lab (c) <span data-year></span> - lectii organizate pe categorii</p>
+    </footer>
+  </div>
+</body>
+</html>

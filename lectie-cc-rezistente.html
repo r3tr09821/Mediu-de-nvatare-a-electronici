@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rezistente in curent continuu | RoboStart Lab</title>
+  <meta name="description" content="Lectie despre rezistente in curent continuu pentru incepatori.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <script defer src="lesson-labs.js"></script>
+</head>
+<body data-page="lectii" data-lesson-topic="cc-resistor">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html"><span class="brand-mark"></span><span><strong>RoboStart</strong><small>Lab pentru incepatori</small></span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Acasa</a><a href="lectii.html" class="active">Lectii</a><a href="proiecte.html">Proiecte</a><a href="resurse.html">Resurse</a>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Curent continuu</p>
+        <h1>Rezistente in curent continuu</h1>
+        <p class="lead">Afli cum controleaza rezistenta curentul, caderea de tensiune si disiparea de putere intr-un circuit de curent continuu.</p>
+      </section>
+      <section class="lesson-page-layout">
+        <aside class="lesson-sidebar">
+          <p class="eyebrow">Obiective</p>
+          <h2>Ce trebuie sa retii</h2>
+          <ul class="mission-list">
+            <li>Rezistenta limiteaza curentul.</li>
+            <li>Tensiunea se poate imparti pe mai multe rezistente.</li>
+            <li>Puterea disipata trebuie luata in calcul.</li>
+          </ul>
+        </aside>
+        <article class="lesson-detail">
+          <p class="eyebrow">Explicatie</p>
+          <h2>Rolul rezistentei intr-un circuit CC</h2>
+          <p>In curent continuu, rezistenta se opune trecerii curentului. Cu cat rezistenta este mai mare, cu atat curentul scade pentru aceeasi tensiune.</p>
+          <div class="step-list">
+            <article><h3>Limitare de curent</h3><p>Este cel mai des folosita pentru protejarea LED-urilor si pentru control simplu.</p></article>
+            <article><h3>Divizor de tensiune</h3><p>Doua rezistente in serie pot crea un nivel de tensiune mai mic pentru o intrare sau un senzor.</p></article>
+            <article><h3>Puterea rezistentei</h3><p>Daca trece prea mult curent prin rezistenta, aceasta se incalzeste si trebuie aleasa o putere mai mare.</p></article>
+          </div>
+          <div class="next-nav"><a class="button button-secondary" href="lectii.html">Inapoi la lectii</a><a class="button button-primary" href="lectie-cc-condensatoare.html">Lectia urmatoare</a></div>
+        </article>
+      </section>
+    </main>
+    <footer class="site-footer"><p>RoboStart Lab (c) <span data-year></span> - curent continuu</p></footer>
+  </div>
+</body>
+</html>
