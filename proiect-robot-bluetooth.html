@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Robot Bluetooth | Proiecte RoboStart Lab</title>
+  <meta name="description" content="Proiect: robot Bluetooth controlat de pe telefon. Prezentare si galerie foto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body data-page="proiect-bluetooth">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>
+          <strong>RoboStart</strong>
+          <small>Lab pentru incepatori</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Acasa</a>
+        <a href="lectii.html">Lectii</a>
+        <a href="proiecte.html" class="active">Proiecte</a>
+        <a href="resurse.html">Resurse</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Proiect 1</p>
+        <h1>Robot Bluetooth (controlat de pe telefon)</h1>
+        <p class="lead">
+          Un robot mobil pe care il controlezi prin Bluetooth dintr-o aplicatie de pe telefon.
+          Proiectul este gandit ca o demonstratie clara pentru comenzi simple si miscare.
+        </p>
+      </section>
+
+      <section class="project-showcase reverse">
+        <div class="project-copy">
+          <p class="eyebrow">Prezentare</p>
+          <h2>Ce face robotul</h2>
+          <p>
+            Robotul primeste comenzi (ex: inainte, inapoi, stanga, dreapta, stop) prin Bluetooth
+            si le transforma in miscari ale motoarelor.
+          </p>
+          <ul class="bullet-list">
+            <li>Control: Bluetooth (telefon).</li>
+            <li>Focus: comenzi + controlul motoarelor.</li>
+            <li>Nivel: incepator spre mediu.</li>
+          </ul>
+          <div class="next-nav">
+            <a class="button button-secondary" href="proiecte.html">Inapoi la lista</a>
+            <a class="button button-primary" href="resurse.html">Vezi resurse</a>
+            <a class="button button-secondary" href="https://drive.google.com/drive/folders/1Rh6l55kWb007JRooctFhZbzso5ejd9l9" target="_blank" rel="noopener noreferrer">Vezi codul</a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="project-media">
+            <img src="img/bluetooth1.png" alt="Robot Bluetooth - imagine 1" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-grid">
+        <article class="panel panel-highlight">
+          <p class="eyebrow">Cum se foloseste</p>
+          <h2>Control de baza</h2>
+          <ul class="bullet-list">
+            <li>Conectezi telefonul la modulul Bluetooth al robotului.</li>
+            <li>Trimiti comenzi din aplicatie.</li>
+            <li>Robotul executa comenzile (miscare/oprire).</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">Idei de upgrade</p>
+          <h2>Ce poti imbunatati</h2>
+          <ul class="bullet-list">
+            <li>Adaugi viteze (trepte) si viraje mai fine.</li>
+            <li>Adaugi faruri/LED-uri comandate tot prin Bluetooth.</li>
+            <li>Adaugi un senzor (ex: ultrasonic) pentru asistenta la evitare.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="features">
+        <div class="section-heading">
+          <p class="eyebrow">Galerie</p>
+          <h2>Imagini din proiect</h2>
+        </div>
+        <div class="card-grid two-up">
+          <article class="card media-card">
+            <img src="img/bluetooth1.png" alt="Robot Bluetooth - foto 1" loading="lazy">
+            <div class="media-caption">Vedere generala</div>
+          </article>
+          <article class="card media-card">
+            <img src="img/bluetooth2.jpg" alt="Robot Bluetooth - foto 2" loading="lazy">
+            <div class="media-caption">Detalii de asamblare</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-strip">
+        <div>
+          <p class="eyebrow">Urmatorul proiect</p>
+          <h2>Spune-mi care e urmatorul si il adaug la lista</h2>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-secondary" href="proiect-incuietoare-amprenta.html">Urmatorul proiect</a>
+          <a class="button button-primary" href="proiecte.html">Inapoi la proiecte</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>RoboStart Lab (c) <span data-year></span> - proiecte simple pentru incepatori</p>
+    </footer>
+  </div>
+</body>
+</html>

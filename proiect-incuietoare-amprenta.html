@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Incuietoare pe amprenta | Proiecte RoboStart Lab</title>
+  <meta name="description" content="Proiect: incuietoare pe amprenta. Prezentare si galerie foto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body data-page="proiect-amprenta">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>
+          <strong>RoboStart</strong>
+          <small>Lab pentru incepatori</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Acasa</a>
+        <a href="lectii.html">Lectii</a>
+        <a href="proiecte.html" class="active">Proiecte</a>
+        <a href="resurse.html">Resurse</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Proiect 2</p>
+        <h1>Incuietoare pe amprenta</h1>
+        <p class="lead">
+          Un proiect de securitate care foloseste un senzor de amprenta pentru a permite accesul
+          doar utilizatorilor inregistrati.
+        </p>
+      </section>
+
+      <section class="project-showcase">
+        <div class="project-copy">
+          <p class="eyebrow">Prezentare</p>
+          <h2>Ce face incuietoarea</h2>
+          <p>
+            Dispozitivul citeste amprenta, o compara cu amprentele salvate si actioneaza mecanismul
+            doar cand gaseste o potrivire.
+          </p>
+          <ul class="bullet-list">
+            <li>Focus: identificare biometrica + control mecanism.</li>
+            <li>Ce inveti: autentificare, salvare/validare utilizatori, semnalizare stare.</li>
+            <li>Nivel: mediu.</li>
+          </ul>
+          <div class="next-nav">
+            <a class="button button-secondary" href="proiecte.html">Inapoi la lista</a>
+            <a class="button button-primary" href="resurse.html">Componente & resurse</a>
+            <a class="button button-secondary" href="https://drive.google.com/drive/folders/1WYWRumm5qUOi90TkJtQrdlFHbQkG1SGs" target="_blank" rel="noopener noreferrer">Vezi codul</a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="project-media">
+            <img src="img/amprenta1.png" alt="Incuietoare pe amprenta - imagine 1" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-grid">
+        <article class="panel panel-highlight">
+          <p class="eyebrow">Cum functioneaza</p>
+          <h2>Flux simplu</h2>
+          <ul class="bullet-list">
+            <li>Inregistrare: adaugi amprentele utilizatorilor autorizati.</li>
+            <li>Verificare: senzorul scaneaza si cauta potrivire.</li>
+            <li>Actiune: deschide/inchide mecanismul + feedback (LED/buzzer).</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">Idei de upgrade</p>
+          <h2>Ce poti imbunatati</h2>
+          <ul class="bullet-list">
+            <li>Log de acces (cine/cand a incercat).</li>
+            <li>Mod admin pentru adaugare/stergere utilizatori.</li>
+            <li>Alarma la incercari repetate esuate.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="features">
+        <div class="section-heading">
+          <p class="eyebrow">Galerie</p>
+          <h2>Imagini din proiect</h2>
+        </div>
+        <div class="card-grid three-up">
+          <article class="card media-card">
+            <img src="img/amprenta1.png" alt="Incuietoare pe amprenta - foto 1" loading="lazy">
+            <div class="media-caption">Vedere generala</div>
+          </article>
+          <article class="card media-card">
+            <img src="img/amprenta2.png" alt="Incuietoare pe amprenta - foto 2" loading="lazy">
+            <div class="media-caption">Senzor / montaj</div>
+          </article>
+          <article class="card media-card">
+            <img src="img/amprenta3.jpg" alt="Incuietoare pe amprenta - foto 3" loading="lazy">
+            <div class="media-caption">Detalii</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-strip">
+        <div>
+          <p class="eyebrow">Navigare</p>
+          <h2>Vezi si celelalte proiecte</h2>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-secondary" href="proiect-robot-bluetooth.html">Proiectul anterior</a>
+          <a class="button button-secondary" href="proiect-brat-robotic.html">Urmatorul proiect</a>
+          <a class="button button-primary" href="proiecte.html">Toate proiectele</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>RoboStart Lab (c) <span data-year></span> - proiecte simple pentru incepatori</p>
+    </footer>
+  </div>
+</body>
+</html>

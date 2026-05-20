@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistem de alarma multi-senzor | Proiecte RoboStart Lab</title>
+  <meta name="description" content="Sistem de alarma multi-senzor: detectie in timp real, alertare instant prin WiFi/WebSocket, SMS (SIM800L) si alarma sonora locala.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body data-page="proiect-alarma">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>
+          <strong>RoboStart</strong>
+          <small>Lab pentru incepatori</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Acasa</a>
+        <a href="lectii.html">Lectii</a>
+        <a href="proiecte.html" class="active">Proiecte</a>
+        <a href="resurse.html">Resurse</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Proiect 4</p>
+        <h1>Sistem de alarma multi-senzor</h1>
+        <p class="lead">Detectie in timp real · Alertare instant · Siguranta acasa</p>
+      </section>
+
+      <section class="project-showcase reverse">
+        <div class="project-copy">
+          <p class="eyebrow">Stack</p>
+          <h2>ESP32-C6 + ESP-IDF + FreeRTOS</h2>
+          <p>WiFi (WebSocket) + SIM800L (SMS) + alarma sonora locala (ISD1820).</p>
+          <div class="card-grid three-up">
+            <article class="card">
+              <div class="card-icon">7</div>
+              <h3>Senzori</h3>
+              <p>Monitorizati continuu, in paralel.</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">5</div>
+              <h3>Tipuri alarma</h3>
+              <p>Gaz, fum, foc, seismica, cutremur (+ multipla).</p>
+            </article>
+            <article class="card">
+              <div class="card-icon">2</div>
+              <h3>Canale alertare</h3>
+              <p>WiFi/WebSocket + SMS (plus sirena locala).</p>
+            </article>
+          </div>
+          <div class="next-nav">
+            <a class="button button-secondary" href="proiecte.html">Inapoi la lista</a>
+            <a class="button button-primary" href="resurse.html">Componente & resurse</a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="project-media">
+            <img src="img/alarma1.png" alt="Sistem de alarma multi-senzor - imagine 1" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-grid">
+        <article class="panel panel-highlight">
+          <p class="eyebrow">Ce face sistemul</p>
+          <h2>Problema reala + solutie DIY</h2>
+          <p>
+            Incendiile, scurgerile de gaz si cutremurele pot produce victime pentru ca nu sunt detectate la timp,
+            iar sistemele comerciale pot costa sute de euro.
+          </p>
+          <p>
+            Solutia: un dispozitiv DIY bazat pe ESP32-C6 care monitorizeaza continuu 7 senzori si alerteaza proprietarul
+            in sub 1 secunda prin 3 metode simultan:
+          </p>
+          <ul class="bullet-list">
+            <li>Notificare pe telefon (WiFi/WebSocket)</li>
+            <li>SMS pe orice numar (SIM800L GSM)</li>
+            <li>Alarma sonora locala (ISD1820)</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">Flux</p>
+          <h2>Din detectie pana la alerta</h2>
+          <div class="step-list">
+            <article>
+              <strong>1. Senzor detecteaza pericolul</strong>
+              <p>Gaz / fum / temperatura / vibratii / acceleratie.</p>
+            </article>
+            <article>
+              <strong>2. ESP32 analizeaza in &lt;50ms</strong>
+              <p>Task-uri FreeRTOS ruleaza in paralel, fara blocare.</p>
+            </article>
+            <article>
+              <strong>3. Alertare instant</strong>
+              <p>Telefon vibra + suna, SMS trimis automat, sirena locala porneste.</p>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section class="features">
+        <div class="section-heading">
+          <p class="eyebrow">Hardware</p>
+          <h2>Ce contine</h2>
+        </div>
+        <div class="card-grid three-up">
+          <article class="card">
+            <div class="card-icon">ESP</div>
+            <h3>ESP32-C6 (DevKitM-1)</h3>
+            <p>Creierul sistemului.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">MQ</div>
+            <h3>MQ-5 + MQ-135</h3>
+            <p>Gaz / fum / CO2.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">ENV</div>
+            <h3>DHT22</h3>
+            <p>Temperatura + umiditate.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">VIB</div>
+            <h3>SW-420 + MPU6050</h3>
+            <p>Vibratii seismice + accelerometru 3D.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">GSM</div>
+            <h3>SIM800L</h3>
+            <p>SMS prin retea GSM.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">UI</div>
+            <h3>WiFi AP + WS2812</h3>
+            <p>Aplicatie pe telefon + LED RGB (12 stari).</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="project-showcase">
+        <div class="project-copy">
+          <p class="eyebrow">Schema</p>
+          <h2>Schema electrica a sistemului</h2>
+          <p>Diagrama este inclusa din prezentare.</p>
+        </div>
+        <div class="project-visual">
+          <div class="project-media">
+            <img src="img/alarma2.png" alt="Schema electrica a sistemului de alarma" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-grid">
+        <article class="panel panel-highlight">
+          <p class="eyebrow">Cum functioneaza</p>
+          <h2>Multitasking real-time (FreeRTOS)</h2>
+          <p>8 procese ruleaza simultan — fiecare senzor are propriul “fir de executie” independent.</p>
+          <ul class="bullet-list">
+            <li><code>alarm_handler</code> — decide ce alarma se declanseaza</li>
+            <li><code>sim_init</code> — initializeaza modemul GSM</li>
+            <li><code>sw420 + mpu</code> — monitorizeaza vibratiile</li>
+            <li><code>mq5 + mq135</code> — monitorizeaza gazele si fumul</li>
+            <li><code>dht22_task</code> — citeste temperatura si umiditatea</li>
+            <li><code>led_task</code> — animeaza LED-ul RGB</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">Aplicatia pe telefon</p>
+          <h2>Fara instalare</h2>
+          <div class="step-list">
+            <article>
+              <strong>1. ESP32 creeaza retea WiFi</strong>
+              <p>Reteaua se numeste <code>AlarmaSenzori</code>.</p>
+            </article>
+            <article>
+              <strong>2. Telefonul se conecteaza</strong>
+              <p>Din setari, ca la orice WiFi.</p>
+            </article>
+            <article>
+              <strong>3. Deschizi Chrome → 192.168.4.1</strong>
+              <p>Pagina se incarca direct din ESP32.</p>
+            </article>
+            <article>
+              <strong>4. WebSocket activ</strong>
+              <p>Alarme in sub 100ms, fara intarziere.</p>
+            </article>
+            <article>
+              <strong>5. Alarma pe telefon</strong>
+              <p>Vibratie 5–10s + sunet + notificare.</p>
+            </article>
+          </div>
+        </article>
+      </section>
+
+      <section class="features">
+        <div class="section-heading">
+          <p class="eyebrow">Logica</p>
+          <h2>Tipuri de alarma + timer inteligent</h2>
+        </div>
+        <div class="card-grid three-up">
+          <article class="card">
+            <div class="card-icon">⚠️</div>
+            <h3>GAZ</h3>
+            <p>MQ-5 detecteaza · puls rapid 440↔880 Hz</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">💨</div>
+            <h3>FUM</h3>
+            <p>MQ-135 detecteaza · bip lung 1000 Hz</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🔥</div>
+            <h3>FOC</h3>
+            <p>Fum + Temp &gt; 50°C · ton ascendent 600→2000 Hz</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">📳</div>
+            <h3>SEISMICA</h3>
+            <p>SW-420 vibreaza · puls grav 80–120 Hz</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🌍</div>
+            <h3>CUTREMUR</h3>
+            <p>SW-420 + MPU6050 · ton profund 60 + 180 Hz</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🚨</div>
+            <h3>MULTIPLA</h3>
+            <p>2+ pericole simultan · sirena 500↔1500 Hz sweep</p>
+          </article>
+        </div>
+        <div class="section-grid">
+          <article class="panel">
+            <p class="eyebrow">Timer alarma</p>
+            <h2>Cum se opreste singur</h2>
+            <ul class="bullet-list">
+              <li>Alarma noua: porneste timer 5s, telefon vibreaza + suna.</li>
+              <li>Alta alarma in timp: MULTIPLA imediat, timer reset la 10s.</li>
+              <li>Aceeasi alarma: timer prelungit la 10s de la ultima detectie.</li>
+              <li>Timer expirat: ESP trimite STOP, telefon se opreste automat.</li>
+            </ul>
+          </article>
+          <article class="panel panel-highlight">
+            <p class="eyebrow">LED + App</p>
+            <h2>Ce vede utilizatorul</h2>
+            <ul class="bullet-list">
+              <li>LED WS2812 — 12 stari vizuale (pornire, incalzire MQ, WiFi activ, conectat, alarme).</li>
+              <li>Temperatura/umiditate live (DHT22, update la 5s).</li>
+              <li>Alerta vizuala + sonora (6 sunete distincte).</li>
+              <li>Vibratii 5–10 secunde (pattern diferit per tip pericol).</li>
+              <li>Istoric alarme cu ora exacta (ultimele 30 alerte salvate).</li>
+              <li>Monitor serial live (log colorat in browser) + notificari Android.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="section-heading">
+          <p class="eyebrow">Solutii</p>
+          <h2>Solutii tehnice interesante</h2>
+        </div>
+        <div class="card-grid">
+          <article class="panel">
+            <h3>DHT22 — citire fara erori</h3>
+            <pre><code>portDISABLE_INTERRUPTS();
+// citire bit-bang precisa
+for(i=0;i&lt;40;i++){
+  while(gpio==0);
+  pulse=esp_timer_get();
+  while(gpio==1);
+  if(pulse&gt;40us) bit=1;
+}
+portENABLE_INTERRUPTS();</code></pre>
+            <p>FreeRTOS poate intrerupe citirea la microsecunde critice; intreruperile sunt blocate doar pe durata citirii.</p>
+          </article>
+          <article class="panel">
+            <h3>Alarme — WebSocket inainte de ISD</h3>
+            <pre><code>// 1. Trimite instant pe telefon
+ws_send_all(json_alarma);
+// 2. Porneste sirena in background
+// (nu blocheaza WebSocket-ul!)
+isd_trigger_async(6000);</code></pre>
+            <p>ISD1820 poate dura 6–9s; apelul asincron evita intarzierea pe telefon.</p>
+          </article>
+          <article class="panel">
+            <h3>WebSocket — PING/PONG corect</h3>
+            <pre><code>if(pkt.type==PING){
+  pkt.type=PONG;
+  httpd_ws_send_frame(req,&amp;pkt);
+  return ESP_OK;
+}
+if(pkt.type==CLOSE){
+  sterge_client_din_lista();
+}</code></pre>
+            <p>Chrome trimite PING la ~5s; fara PONG conexiunea se inchide si apar erori.</p>
+          </article>
+          <article class="panel">
+            <h3>SIM800L — auto-baud detectie</h3>
+            <pre><code>int bauds[]={9600,115200,57600};
+for(b=0;b&lt;3;b++){
+  uart_set_baudrate(bauds[b]);
+  uart_write('AT\r\n');
+  if(raspuns contine 'OK')
+    break; // gasit!
+}</code></pre>
+            <p>SIM800L poate veni setat pe viteze diferite; se testeaza automat pana la “OK”.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="section-heading">
+          <p class="eyebrow">Contributii</p>
+          <h2>Ce am facut eu</h2>
+        </div>
+        <div class="card-grid three-up">
+          <article class="card">
+            <div class="card-icon">01</div>
+            <h3>Proiectare electronica</h3>
+            <p>Componente, pini fara conflicte de boot, alimentare separata pentru SIM800L.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">02</div>
+            <h3>Programare C (ESP-IDF)</h3>
+            <p>8 task-uri FreeRTOS, drivere senzori, intreruperi si timere de precizie.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">03</div>
+            <h3>WiFi AP + server web</h3>
+            <p>AP, pagina HTML embedded in firmware, WebSocket bidirectional.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">04</div>
+            <h3>Logica alarme + timer</h3>
+            <p>Masina de stari: simpla (5s), escaladare multipla (10s), detectie in timp real.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">05</div>
+            <h3>Aplicatie web pe telefon</h3>
+            <p>HTML5, sunete (Web Audio), vibratii, monitor serial live, afisare temp/umid.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">06</div>
+            <h3>Debugging</h3>
+            <p>Fixuri: DHT22, blocari WebSocket, deconectari SIM800L, intarzieri alarma.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-grid">
+        <article class="panel panel-highlight">
+          <p class="eyebrow">Abilitati folosite</p>
+          <h2>Hardware & Electronica</h2>
+          <ul class="bullet-list">
+            <li>Proiectare schema electrica; lipire si asamblare.</li>
+            <li>Alimentare circuite (TP4056, regulatoare).</li>
+            <li>Translator nivel logic 5V↔3.3V; depanare cu multimetru/osciloscop.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">Abilitati folosite</p>
+          <h2>Programare & Comunicatii</h2>
+          <ul class="bullet-list">
+            <li>C, ESP-IDF v5.5, FreeRTOS (task-uri, mutex, event groups).</li>
+            <li>GPIO, UART, I2C, bit-bang; intreruperi, WDT, timere.</li>
+            <li>WiFi AP, WebSocket, BLE NimBLE (GATT), GSM/GPRS (SIM800L), HTTP server.</li>
+            <li>HTML5/CSS/JS, Web Audio API, Vibration API, Notifications API, design responsive.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="cta-strip">
+        <div>
+          <p class="eyebrow">Ce am realizat</p>
+          <h2>Sistem complet functional + alerta in sub 1 secunda</h2>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-secondary" href="proiect-brat-robotic.html">Proiectul anterior</a>
+          <a class="button button-primary" href="proiecte.html">Toate proiectele</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>RoboStart Lab (c) <span data-year></span> - proiecte simple pentru incepatori</p>
+    </footer>
+  </div>
+</body>
+</html>

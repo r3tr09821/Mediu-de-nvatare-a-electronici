@@ -587,6 +587,30 @@ main {
   background: linear-gradient(120deg, var(--accent-1-faint), var(--accent-2-faint));
 }
 
+.cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: flex-end;
+}
+
+.media-card {
+  padding: 0;
+  border-radius: var(--radius-lg);
+}
+
+.media-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.media-caption {
+  padding: 14px 18px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
 .site-footer {
   margin-top: 30px;
   padding: 18px 22px;
@@ -729,6 +753,24 @@ code {
   padding: 2px 8px;
   border-radius: 6px;
   background: var(--soft-bg-strong);
+}
+
+pre {
+  margin: 12px 0 0;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.22);
+  overflow: auto;
+}
+
+pre code {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  display: block;
+  white-space: pre;
+  line-height: 1.55;
 }
 
 .cursor-fog {
@@ -1045,6 +1087,26 @@ code {
 
 .project-visual {
   min-height: 280px;
+}
+
+.project-media {
+  width: 100%;
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(145deg, var(--accent-1-faint), var(--accent-2-faint)),
+    var(--soft-bg);
+  overflow: hidden;
+}
+
+.project-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .image-placeholder {

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brat robotic | Proiecte RoboStart Lab</title>
+  <meta name="description" content="Proiect: brat robotic. Prezentare si galerie foto.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body data-page="proiect-brat">
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"></span>
+        <span>
+          <strong>RoboStart</strong>
+          <small>Lab pentru incepatori</small>
+        </span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav">
+        <a href="index.html">Acasa</a>
+        <a href="lectii.html">Lectii</a>
+        <a href="proiecte.html" class="active">Proiecte</a>
+        <a href="resurse.html">Resurse</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero compact">
+        <p class="eyebrow">Proiect 3</p>
+        <h1>Brat robotic</h1>
+        <p class="lead">
+          Un proiect care arata cum poti controla miscarea pe mai multe axe si cum poti construi un mecanism
+          care ridica, roteste sau prinde obiecte.
+        </p>
+      </section>
+
+      <section class="project-showcase reverse">
+        <div class="project-copy">
+          <p class="eyebrow">Prezentare</p>
+          <h2>Ce face bratul</h2>
+          <p>
+            Bratul robotic poate fi controlat prin butoane/potentiometre sau printr-un program care stabileste
+            unghiurile. Este un proiect bun pentru a intelege controlul servomotoarelor si miscarea coordonata.
+          </p>
+          <ul class="bullet-list">
+            <li>Focus: mecanica + control pe mai multe grade de libertate.</li>
+            <li>Ce inveti: servomotoare, alimentare corecta, control pe unghiuri.</li>
+            <li>Nivel: mediu.</li>
+          </ul>
+          <div class="next-nav">
+            <a class="button button-secondary" href="proiecte.html">Inapoi la lista</a>
+            <a class="button button-primary" href="resurse.html">Componente & resurse</a>
+            <a class="button button-secondary" href="https://drive.google.com/drive/folders/1QWbqxeyM68Rf-cVuvKJZJGmliFQyQb_r" target="_blank" rel="noopener noreferrer">Vezi codul</a>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="project-media">
+            <img src="img/brat1.png" alt="Brat robotic - imagine 1" loading="lazy">
+          </div>
+        </div>
+      </section>
+
+      <section class="section-grid">
+        <article class="panel panel-highlight">
+          <p class="eyebrow">Cum functioneaza</p>
+          <h2>Control pe axe</h2>
+          <ul class="bullet-list">
+            <li>Fiecare articulatie este controlata separat (unghiuri).</li>
+            <li>Miscarea poate fi manuala (potentiometre) sau programata.</li>
+            <li>Alimentarea separata pentru motoare ajuta la stabilitate.</li>
+          </ul>
+        </article>
+        <article class="panel">
+          <p class="eyebrow">Idei de upgrade</p>
+          <h2>Ce poti imbunatati</h2>
+          <ul class="bullet-list">
+            <li>Adaugi o “gheara” mai puternica sau o ventuza.</li>
+            <li>Salvezi pozitii preset (pick & place).</li>
+            <li>Adaugi control wireless (Bluetooth/Wi‑Fi).</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="features">
+        <div class="section-heading">
+          <p class="eyebrow">Galerie</p>
+          <h2>Imagini din proiect</h2>
+        </div>
+        <div class="card-grid three-up">
+          <article class="card media-card">
+            <img src="img/brat1.png" alt="Brat robotic - foto 1" loading="lazy">
+            <div class="media-caption">Vedere generala</div>
+          </article>
+          <article class="card media-card">
+            <img src="img/brat2.png" alt="Brat robotic - foto 2" loading="lazy">
+            <div class="media-caption">Detalii mecanice</div>
+          </article>
+          <article class="card media-card">
+            <img src="img/brat3.jpg" alt="Brat robotic - foto 3" loading="lazy">
+            <div class="media-caption">Asamblare / cablaj</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="cta-strip">
+        <div>
+          <p class="eyebrow">Navigare</p>
+          <h2>Vezi si celelalte proiecte</h2>
+        </div>
+        <div class="cta-actions">
+          <a class="button button-secondary" href="proiect-incuietoare-amprenta.html">Proiectul anterior</a>
+          <a class="button button-secondary" href="proiect-sistem-alarma.html">Urmatorul proiect</a>
+          <a class="button button-primary" href="proiecte.html">Toate proiectele</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>RoboStart Lab (c) <span data-year></span> - proiecte simple pentru incepatori</p>
+    </footer>
+  </div>
+</body>
+</html>
